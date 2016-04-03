@@ -13,9 +13,9 @@
     </scm>
     <dependencies>
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.4.6-R0.2-SNAPSHOT</version>
+            <groupId>com.spigot</groupId>
+            <artifactId>craftbukkit</artifactId>
+            <version>1.9.2</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
@@ -173,6 +173,14 @@
                 <enabled>true</enabled>
             </releases>
             <url>http://maven.mcbouncer.com/repo/</url>
+        </repository>
+        <repository>
+            <id>local-repos</id>
+	    <url>file:${project.basedir}/../repos</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
         </repository>
     </repositories>
 </project>
